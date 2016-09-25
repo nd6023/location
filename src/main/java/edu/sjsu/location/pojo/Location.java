@@ -2,85 +2,103 @@ package edu.sjsu.location.pojo;
 
 public class Location {
 	
-	private String clientID;
-	private double latitude;
-	private double longitude;
-	private boolean isAgree;
-	private String contactInfo;
-	private String eventID;
+	private String lon;
+	private String device_name;
+	private String ts;
+	private String user;
+	private String status;
+	private String lat;
+	private String device_address;
+	private String help_msg;
 	
 	public Location() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
-	
-	public Location(String clientID, double latitude, double longitude, boolean isAgree, String contactInfo,
-			String eventID) {
+
+	public Location(String lon, String device_name, String ts, String user, String status, String lat,
+			String device_address, String help_msg) {
 		super();
-		this.clientID = clientID;
-		this.latitude = latitude;
-		this.longitude = longitude;
-		this.isAgree = isAgree;
-		this.contactInfo = contactInfo;
-		this.eventID = eventID;
+		this.lon = lon;
+		this.device_name = device_name;
+		this.ts = ts;
+		this.user = user;
+		this.status = status;
+		this.lat = lat;
+		this.device_address = device_address;
+		this.help_msg = help_msg;
 	}
 
-	public boolean isAgree() {
-		return isAgree;
+	public String getLon() {
+		return lon;
 	}
 
-	public void setAgree(boolean isAgree) {
-		this.isAgree = isAgree;
+	public void setLon(String lon) {
+		this.lon = lon;
 	}
 
-	public String getContactInfo() {
-		return contactInfo;
-	}
-	
-	public String getEventID() {
-		return eventID;
+	public String getDevice_name() {
+		return device_name;
 	}
 
-	public void setEventID(String eventID) {
-		this.eventID = eventID;
+	public void setDevice_name(String device_name) {
+		this.device_name = device_name;
 	}
 
-	public void setContactInfo(String contactInfo) {
-		this.contactInfo = contactInfo;
+	public String getTs() {
+		return ts;
 	}
 
-	public String getClientID() {
-		return clientID;
+	public void setTs(String ts) {
+		this.ts = ts;
 	}
 
-
-	public void setClientID(String clientID) {
-		this.clientID = clientID;
+	public String getUser() {
+		return user;
 	}
 
-
-	public double getLatitude() {
-		return latitude;
+	public void setUser(String user) {
+		this.user = user;
 	}
 
-
-	public void setLatitude(double latitude) {
-		this.latitude = latitude;
+	public String getStatus() {
+		return status;
 	}
 
-
-	public double getLongitude() {
-		return longitude;
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
+	public String getLat() {
+		return lat;
+	}
 
-	public void setLongitude(double longitude) {
-		this.longitude = longitude;
+	public void setLat(String lat) {
+		this.lat = lat;
+	}
+
+	public String getDevice_address() {
+		return device_address;
+	}
+
+	public void setDevice_address(String device_address) {
+		this.device_address = device_address;
+	}
+
+	public String getHelp_msg() {
+		return help_msg;
+	}
+
+	public void setHelp_msg(String help_msg) {
+		this.help_msg = help_msg;
 	}
 
 	@Override
 	public String toString() {
-		return "Location [clientID=" + clientID + ", latitude=" + latitude + ", longitude=" + longitude + ", isAgree="
-				+ isAgree + ", contactInfo=" + contactInfo + ", eventID=" + eventID + "]";
+		return "Location [lon=" + lon + ", device_name=" + device_name + ", ts=" + ts + ", user=" + user + ", status="
+				+ status + ", lat=" + lat + ", device_address=" + device_address + ", help_msg=" + help_msg + "]";
 	}
+
 	
+		
 }
